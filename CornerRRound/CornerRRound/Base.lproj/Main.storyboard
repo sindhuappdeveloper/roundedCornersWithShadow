@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CornerRRound" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="id0-2t-6op">
+                                <rect key="frame" x="77" y="244" width="261" height="250"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="strawberry" translatesAutoresizingMaskIntoConstraints="NO" id="1Ck-ug-bcd">
+                                        <rect key="frame" x="0.0" y="0.0" width="261" height="250"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="4Hg-XA-Q8N"/>
+                                    <constraint firstAttribute="bottom" secondItem="1Ck-ug-bcd" secondAttribute="bottom" id="7Jf-P9-Elw"/>
+                                    <constraint firstItem="1Ck-ug-bcd" firstAttribute="leading" secondItem="id0-2t-6op" secondAttribute="leading" id="Kwo-3H-bhM"/>
+                                    <constraint firstAttribute="trailing" secondItem="1Ck-ug-bcd" secondAttribute="trailing" id="jYH-g4-vNq"/>
+                                    <constraint firstItem="1Ck-ug-bcd" firstAttribute="top" secondItem="id0-2t-6op" secondAttribute="top" id="r15-7T-r6q"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="id0-2t-6op" secondAttribute="trailing" constant="76" id="Hvd-WM-GvU"/>
+                            <constraint firstItem="id0-2t-6op" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="O0O-Kz-awt"/>
+                            <constraint firstItem="id0-2t-6op" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="vED-ib-rtG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="id0-2t-6op" id="l7D-gk-vY6"/>
+                        <outlet property="imageView" destination="1Ck-ug-bcd" id="gkd-pN-624"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108.69565217391305" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="strawberry" width="696" height="1100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
